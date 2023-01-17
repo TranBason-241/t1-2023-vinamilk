@@ -143,21 +143,6 @@
   .group_image_416 img:first-child {
     position: initial; }
 
-.group_image_462 {
-  text-align: center;
-  display: block;
-  width: 462px;
-  max-width: 100%;
-  height: auto;
-  margin: 30px auto;
-  position: relative; }
-  .group_image_462 img {
-    position: absolute;
-    top: 0;
-    left: 0; }
-  .group_image_462 img:first-child {
-    position: initial; }
-
 .img_530 {
   width: 530px; }
 
