@@ -242,13 +242,38 @@
 	}
 }
 
+.group_image_blue {
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+
+	z-index: 15;
+	display: inline-block;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	img:first-child {
+		position: initial;
+	}
+}
+
 .img_530 {
 	width: 530px;
+}
+.img_590 {
+	width: 590px;
+}
+.img_480 {
+	width: 480px;
+	margin-top: 20px;
 }
 .img_1160 {
 	width: 1160px;
 	margin-bottom: 30px;
 }
+
 .img_red {
 	position: absolute;
 	top: 1000px;
@@ -367,6 +392,10 @@
 	position: relative;
 
 	z-index: 15;
+}
+.group_image_container_4 {
+	text-align: center;
+	position: relative;
 }
 .section_1_5 {
 	background-color: #fff;
@@ -491,6 +520,10 @@
 		margin-bottom: 0;
 	}
 }
+
+.group_image_1110_mobile {
+	text-align: center;
+}
 @media (max-width: 1600px) {
 	.paper_content {
 		padding: 0 7%;
@@ -573,7 +606,16 @@
 	.group_image_container_2 {
 		padding: 0 15px;
 	}
+	.img_530 {
+		width: 58%;
+	}
 }
+@media (max-width: 768px) {
+	.img_530 {
+		width: 50%;
+	}
+}
+
 @media (min-width: 577px) {
 	.mobile {
 		display: none;
@@ -581,28 +623,83 @@
 }
 
 @media (max-width: 576px) {
-	br {
-		display: block !important;
-	}
 	.pc {
 		display: none;
 	}
-	.group_image_500 {
-		// padding: 0 15px;
 
-		width: 80%;
-		margin: 10px auto;
+	.section_1_2 {
+		margin-top: -69%;
 	}
-	.text_content {
+	.group_text {
 		padding: 0 15px;
 	}
-	.text_title {
-		font-size: 20px;
+	.paper_content {
+		padding: 0px 15px;
 	}
-	.section_2 {
-		background-position: center top 14%;
+	.group_text_3,
+	.group_text_2 {
+		padding: 0 30px;
+	}
+	.paper {
+		margin-top: -18%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.img_red {
+		padding: 0 15px;
 	}
 	.des_image {
-		padding: 0 15px;
+		margin-top: 10px !important;
+	}
+	.group_image_container {
+		margin-top: -68px;
+	}
+	.group_image_container_2 {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 414px) {
+	.text_title {
+		font-size: 19px;
+	}
+	.img_560 {
+		max-width: 80%;
+	}
+	.section_1_2 {
+		margin-top: -93%;
+	}
+	.group_image_416 {
+		max-width: 66%;
+	}
+	.group_image_462 {
+		max-width: 92%;
+	}
+	.des_slider {
+		font-size: 13.9px;
+	}
+	.author {
+		margin-top: -17%;
+	}
+	.group_image_1110_mobile {
+		padding: 0 10px;
+	}
+	.des_image{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
+
+@media (max-width: 390px) {
+	.text_title {
+		font-size: 19px;
+		padding: 0 7px;
+	}
+
+	.des_slider {
+		font-size: 13.9px;
+		padding: 0 20px;
+		line-height: 17px !important;
+		margin-top: -8% !important;
 	}
 }
