@@ -684,9 +684,14 @@
 	.group_image_1110_mobile {
 		padding: 0 10px;
 	}
-	.des_image{
+	.des_image {
 		padding-left: 5px;
 		padding-right: 5px;
+	}
+	.author {
+		.text_content {
+			font-size: 16px !important;
+		}
 	}
 }
 
@@ -701,5 +706,12 @@
 		padding: 0 20px;
 		line-height: 17px !important;
 		margin-top: -8% !important;
+	}
+	.author {
+		margin-top: -28%;
+		.text_content {
+			font-size: 16px !important;
+		}
+		padding: 0 2px;
 	}
 }
