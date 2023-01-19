@@ -35,7 +35,7 @@
     <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
     <!-- End stylesheet -->
 
-    <title>Bà Mai Kiều Liên kể về lon</title>
+    <title>Bà Mai Kiều Liên kể về lon sữa bột 'made in Vietnam' đầu tiên</title>
   </head>
 
   <body>
@@ -273,6 +273,7 @@
       <div class="section-content clearfix">
         <div class="wrapper-content">
           <div id="overlay"></div>
+
           <div class="my_container">
             <div class="section_1">
               <div class="section_1_1">
@@ -742,24 +743,86 @@
                         đến nguồn dinh dưỡng tối ưu cho trẻ nhỏ.
                       </p>
                     </div>
-                    <div class="group_image_780 group_image_5">
-                      <img
-                        src="assets/images/group_5_1.png"
-                        data-aos="fade-right"
-                        data-aos-easing="linear"
-                        data-aos-duration="800"
-                        data-aos-offset="400"
-                        data-aos-delay="500"
-                      />
-                      <img
-                        src="assets/images/group_5_2.png"
-                        data-aos="fade-left"
-                        data-aos-easing="linear"
-                        data-aos-duration="800"
-                        data-aos-offset="400"
-                        data-aos-delay="500"
-                      />
-                    </div>
+
+                    <section
+                      class="image-comparison"
+                      data-component="image-comparison-slider"
+                    >
+                      <div class="image-comparison__slider-wrapper">
+                        <label
+                          for="image-comparison-range"
+                          class="image-comparison__label"
+                          >Move image comparison slider</label
+                        >
+                        <input
+                          type="range"
+                          min="0"
+                          max="100"
+                          value="50"
+                          class="image-comparison__range"
+                          id="image-compare-range"
+                          data-image-comparison-range=""
+                        />
+
+                        <div
+                          class="image-comparison__image-wrapper image-comparison__image-wrapper--overlay"
+                          data-image-comparison-overlay=""
+                        >
+                          <figure
+                            class="image-comparison__figure image-comparison__figure--overlay"
+                          >
+                            <picture class="image-comparison__picture">
+                              <img
+                                src="assets/images/group_5_1_new.png"
+                                alt="Mojave desert in the sun"
+                                class="image-comparison__image"
+                              />
+                            </picture>
+                          </figure>
+                        </div>
+
+                        <div
+                          class="image-comparison__slider"
+                          data-image-comparison-slider=""
+                        >
+                          <span
+                            class="image-comparison__thumb"
+                            data-image-comparison-thumb=""
+                          >
+                            <svg
+                              class="image-comparison__thumb-icon"
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="18"
+                              height="10"
+                              viewBox="0 0 18 10"
+                              fill="currentColor"
+                            >
+                              <path
+                                class="image-comparison__thumb-icon--left"
+                                d="M12.121 4.703V.488c0-.302.384-.454.609-.24l4.42 4.214a.33.33 0 0 1 0 .481l-4.42 4.214c-.225.215-.609.063-.609-.24V4.703z"
+                              ></path>
+                              <path
+                                class="image-comparison__thumb-icon--right"
+                                d="M5.879 4.703V.488c0-.302-.384-.454-.609-.24L.85 4.462a.33.33 0 0 0 0 .481l4.42 4.214c.225.215.609.063.609-.24V4.703z"
+                              ></path>
+                            </svg>
+                          </span>
+                        </div>
+
+                        <div class="image-comparison__image-wrapper">
+                          <figure class="image-comparison__figure">
+                            <picture class="image-comparison__picture">
+                              <img
+                                src="assets/images/group_5_2_new.png"
+                                alt="Mojave desert in the dark"
+                                class="image-comparison__image"
+                              />
+                            </picture>
+                          </figure>
+                        </div>
+                      </div>
+                    </section>
+
                     <p
                       class="des_image"
                       data-aos="fade-up"
@@ -1348,6 +1411,7 @@
                       alt=""
                       class="img img_6 mobile"
                     />
+
                     <div class="author pc">
                       <p class="text_content t-content">
                         Nội dung: <span>Minh Tú</span> - Thiết kế:
@@ -1360,7 +1424,7 @@
                       <p class="text_content t-content">
                         Nội dung: <span>Minh Tú</span> - Thiết kế:
                         <span>Hằng Trịnh</span> <br />
-                        Ảnh <span>Quỳnh Trần</span> - Kỹ thuật:
+                        Ảnh: <span>Quỳnh Trần</span> - Kỹ thuật:
                         <span>Sơn Bá</span>
                       </p>
                     </div>
@@ -1398,6 +1462,7 @@
     <script type="text/javascript" src="assets/js/aos.js"></script>
     <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
     <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+
     <script type="text/javascript" src="assets/js/main.min.js"></script>
     <script>
       AOS.init({ offset: 120, duration: 5000 });
@@ -1406,7 +1471,7 @@
         .forEach((img) => img.addEventListener("load", () => AOS.refresh()));
     </script>
     <script>
-      var mySwiper = new Swiper(".swiper-container", {
+      var mySwiper = new Swiper(".swiper-container_p", {
         // Optional parameters
         direction: "horizontal",
         loop: true,
@@ -1436,7 +1501,7 @@
           },
           320: {
             slidesPerView: 1,
-            spaceBetween: 40,
+            spaceBetween: 0,
           },
         },
       });
