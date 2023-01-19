@@ -1,800 +1,1362 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 
-<head>
-  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <!-- Core stylesheet -->
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/fontawesome.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/general_v2_min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/animate-v4.min.css"
+    />
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="assets/css/swiper-bundle.min.css"
+    />
+    <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
+    <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
+    <!-- End stylesheet -->
 
-  <!-- Core stylesheet -->
-  <link type="text/css" rel="stylesheet" href="assets/css/fontawesome.min.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/general_v2_min.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/global.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/animate-v4.min.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/aos.css" />
-  <link type="text/css" rel="stylesheet" href="assets/css/main.css" />
-  <!-- End stylesheet -->
+    <title>Bà Mai Kiều Liên kể về lon</title>
+  </head>
 
-  <title>Sun Grand City Hillside Residence tại Phú Quốc - VnExpress</title>
-</head>
-
-<body>
-  <!-- Document Warpper -->
-  <div id="warpper" class="clearfix">
-    <!-- Top Nav -->
-    <div id="topbar" class="topbar fixed-top clearfix nav-down">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="">
-          <span class="sr-only">Toggle navigation</span><span class="toggle-icon"></span>
-        </button>
-        <a href="https://vnexpress.net/" class="logo" id="logo"><img src="assets/images/logo-150x29.png" alt="VnExpress"
-            class="pc-only img-100" /></a>
-        <div class="block-right">
-          <a href="#box_comment" class="button-comments count_comment" data-target="">
-            <i class="fas fa-comment"></i>
-            <span class="counter">Bình luận</span>
-          </a>
-          <ul class="list-inline social">
-            <li>
-              <a href="javascript:void(0);" class="si-facebook shape-circle social-item fb_share"
-                data-type="fb_share"><i class="fab fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="javascript:void(0);" class="si-twitter shape-circle social-item tw_share" data-type="tw_share"><i
-                  class="fab fa-twitter"></i></a>
-            </li>
-          </ul>
-          <form action="https://timkiem.vnexpress.net/" method="get" class="block-right">
-            <div class="search">
-              <input autocomplete="off" type="text" class="search-input" placeholder="Tìm kiếm" maxlength="80"
-                name="q" />
-              <span class="search-btn">
-                <button type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </span>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- End Top Nav -->
-    <!-- Menu -->
-    <div class="mask-content"></div>
-    <div id="menu-box" class="menu-box" tabindex="5000">
-      <div class="box_width_common">
-        <div class="block_scoll_menu">
-          <ul class="list_item_panel">
-            <li>
-              <a href="https://vnexpress.net/"><i class="ic ic-m-home"></i>Trang chủ</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/thoi-su"><i class="ic ic-m-news"></i>Thời sự</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/goc-nhin"><i class="ic ic-m-opinion"></i>Góc nhìn</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/the-gioi"><i class="ic ic-m-world"></i>Thế giới</a>
-            </li>
-            <li class="active">
-              <a href="https://vnexpress.net/kinh-doanh"><i class="ic ic-m-business"></i>Kinh doanh</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/giai-tri"><i class="ic ic-m-entertainment"></i>Giải trí</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/the-thao"><i class="ic ic-m-sport"></i>Thể thao</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/phap-luat"><i class="ic ic-m-law"></i>Pháp luật</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/giao-duc"><i class="ic ic-m-education"></i>Giáo dục</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/suc-khoe"><i class="ic ic-m-health"></i>Sức khỏe</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/doi-song"><i class="ic ic-m-family"></i>Đời sống</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/du-lich"><i class="ic ic-m-travel"></i>Du lịch</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/khoa-hoc"><i class="ic ic-m-science"></i>Khoa học</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/so-hoa"><i class="ic ic-m-technology"></i>Số hóa</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/oto-xe-may"><i class="ic ic-m-car"></i>Xe</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/y-kien"><i class="ic ic-m-social"></i>Ý kiến</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/tam-su"><i class="ic ic-m-talk"></i>Tâm sự</a>
-            </li>
-            <li>
-              <a href="https://video.vnexpress.net"><i class="ic ic-m-video"></i>Video</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/anh"><i class="ic ic-m-photo"></i>Ảnh</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/infographics"><i class="ic ic-m-infographic"></i>Infographics</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/cuoi"><i class="ic ic-m-fun"></i>Cười</a>
-            </li>
-            <li>
-              <a href="https://raovat.vnexpress.net"><i class="ic ic-m-ecom"></i>Fsell</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/24h-qua" class="bg_666"><i class="ic ic-m-24h"></i>24h qua</a>
-            </li>
-            <li>
-              <a href="https://vnexpress.net/lien-he-toa-soan/" class="bg_e8e8"><i class="ic ic-m-contact"></i>Liên hệ
-                Tòa soạn</a>
-            </li>
-            <li class="end">
-              <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"><i class="ic ic-m-mail"></i>Thông tin Tòa
-                soạn</a>
-            </li>
-          </ul>
-          <div class="coppy_right_left width_common">
-            <i class="ic ic-caret-2-down"></i>
-            <div class="txt_coppy_right">
-              <p>
-                &copy; Copyright 1997 - VnExpress.net, All rights reserved
-              </p>
-              <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
-            </div>
-            <div class="txt_lienhe">
-              Hotline: <br />
-              <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
-              <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
-            </div>
+  <body>
+    <!-- Document Warpper -->
+    <div id="warpper" class="clearfix">
+      <!-- Top Nav -->
+      <div id="topbar" class="topbar fixed-top clearfix nav-down">
+        <div class="container">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=""
+          >
+            <span class="sr-only">Toggle navigation</span
+            ><span class="toggle-icon"></span>
+          </button>
+          <a href="https://vnexpress.net/" class="logo" id="logo"
+            ><img
+              src="assets/images/logo-150x29.png"
+              alt="VnExpress"
+              class="pc-only img-100"
+          /></a>
+          <div class="block-right">
+            <a
+              href="#box_comment"
+              class="button-comments count_comment"
+              data-target=""
+            >
+              <i class="fas fa-comment"></i>
+              <span class="counter">Bình luận</span>
+            </a>
+            <ul class="list-inline social">
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="si-facebook shape-circle social-item fb_share"
+                  data-type="fb_share"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="si-twitter shape-circle social-item tw_share"
+                  data-type="tw_share"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+            </ul>
+            <form
+              action="https://timkiem.vnexpress.net/"
+              method="get"
+              class="block-right"
+            >
+              <div class="search">
+                <input
+                  autocomplete="off"
+                  type="text"
+                  class="search-input"
+                  placeholder="Tìm kiếm"
+                  maxlength="80"
+                  name="q"
+                />
+                <span class="search-btn">
+                  <button type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-      <div id="ascrail2000" class="nicescroll-rails">
-        <div class="vne-hr1"></div>
-      </div>
-      <div id="ascrail2000-hr" class="nicescroll-rails">
-        <div class="vne-hr2"></div>
-      </div>
-    </div>
-    <!-- End Menu -->
-    <!-- Main Content -->
-    <div class="section-content clearfix">
-      <div class="wrapper-content">
-        <div id="overlay"></div>
-        <div class="my_container">
-          <div class="section_1">
-            <div class="section_1_1">
-              <div class="group_image pc">
-                <img src="assets/images/group_1_2.png" data-aos="fade-right" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
-                <img src="assets/images/group_1_1.png" />
-                <img src="assets/images/group_1_2.png" data-aos="fade-right" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
-                <img src="assets/images/group_1_3.png" data-aos="fade-left" data-aos-easing="linear"
-                  data-aos-duration="1000" data-aos-offset="400" data-aos-delay="1000" />
-                <img src="assets/images/group_1_4.png" data-aos="fade-up" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="400" data-aos-delay="1200" />
-              </div>
-              <div class="group_image mobile">
-                <img src="assets/images/group_1_2_mobile.png" data-aos="fade-right" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
-                <img src="assets/images/group_1_1_mobile.png" />
-                <img src="assets/images/group_1_2_mobile.png" data-aos="fade-right" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
-                <img src="assets/images/group_1_3_mobile.png" data-aos="fade-left" data-aos-easing="linear"
-                  data-aos-duration="1000" data-aos-offset="400" data-aos-delay="1000" />
-                <img src="assets/images/group_1_4_mobile.png" data-aos="fade-up" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="400" data-aos-delay="1200" />
-              </div>
-              <div class="paper">
-                <p class="text_title" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="800"
-                  data-aos-offset="300">
-                  Nhìn nhà máy “đắp chiếu” sau chiến tranh, ít ai ngờ đây sẽ
-                  trở thành cái nôi cho thương hiệu sữa bột trẻ em đầu tiên
-                  của Việt Nam, người khai sinh là bà Mai Kiều Liên - khi đó
-                  mới ngoài 30 tuổi.
+      <!-- End Top Nav -->
+      <!-- Menu -->
+      <div class="mask-content"></div>
+      <div id="menu-box" class="menu-box" tabindex="5000">
+        <div class="box_width_common">
+          <div class="block_scoll_menu">
+            <ul class="list_item_panel">
+              <li>
+                <a href="https://vnexpress.net/"
+                  ><i class="ic ic-m-home"></i>Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/thoi-su"
+                  ><i class="ic ic-m-news"></i>Thời sự</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/goc-nhin"
+                  ><i class="ic ic-m-opinion"></i>Góc nhìn</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/the-gioi"
+                  ><i class="ic ic-m-world"></i>Thế giới</a
+                >
+              </li>
+              <li class="active">
+                <a href="https://vnexpress.net/kinh-doanh"
+                  ><i class="ic ic-m-business"></i>Kinh doanh</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/giai-tri"
+                  ><i class="ic ic-m-entertainment"></i>Giải trí</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/the-thao"
+                  ><i class="ic ic-m-sport"></i>Thể thao</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/phap-luat"
+                  ><i class="ic ic-m-law"></i>Pháp luật</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/giao-duc"
+                  ><i class="ic ic-m-education"></i>Giáo dục</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/suc-khoe"
+                  ><i class="ic ic-m-health"></i>Sức khỏe</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/doi-song"
+                  ><i class="ic ic-m-family"></i>Đời sống</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/du-lich"
+                  ><i class="ic ic-m-travel"></i>Du lịch</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/khoa-hoc"
+                  ><i class="ic ic-m-science"></i>Khoa học</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/so-hoa"
+                  ><i class="ic ic-m-technology"></i>Số hóa</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/oto-xe-may"
+                  ><i class="ic ic-m-car"></i>Xe</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/y-kien"
+                  ><i class="ic ic-m-social"></i>Ý kiến</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/tam-su"
+                  ><i class="ic ic-m-talk"></i>Tâm sự</a
+                >
+              </li>
+              <li>
+                <a href="https://video.vnexpress.net"
+                  ><i class="ic ic-m-video"></i>Video</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/anh"
+                  ><i class="ic ic-m-photo"></i>Ảnh</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/infographics"
+                  ><i class="ic ic-m-infographic"></i>Infographics</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/cuoi"
+                  ><i class="ic ic-m-fun"></i>Cười</a
+                >
+              </li>
+              <li>
+                <a href="https://raovat.vnexpress.net"
+                  ><i class="ic ic-m-ecom"></i>Fsell</a
+                >
+              </li>
+              <li>
+                <a href="https://vnexpress.net/24h-qua" class="bg_666"
+                  ><i class="ic ic-m-24h"></i>24h qua</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://vnexpress.net/lien-he-toa-soan/"
+                  class="bg_e8e8"
+                  ><i class="ic ic-m-contact"></i>Liên hệ Tòa soạn</a
+                >
+              </li>
+              <li class="end">
+                <a href="https://vnexpress.net/contact.htm" class="bg_e8e8"
+                  ><i class="ic ic-m-mail"></i>Thông tin Tòa soạn</a
+                >
+              </li>
+            </ul>
+            <div class="coppy_right_left width_common">
+              <i class="ic ic-caret-2-down"></i>
+              <div class="txt_coppy_right">
+                <p>
+                  &copy; Copyright 1997 - VnExpress.net, All rights reserved
                 </p>
-                <img src="assets/images/img_1.png" alt="" class="img_560" data-aos="zoom-in" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="300" />
-                <div class="group_text group_text_1" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800"
-                  data-aos-offset="300">
-                  <p class="text_content">
-                    Những ký ức, cột mốc trong hành trình khai phá thị trường
-                    sữa bột trẻ em tuy khó khăn nhưng đầy máu lửa gắn liền với
-                    bà Mai Kiều Liên, người trực tiếp khai sinh ra Dielac -
-                    thương hiệu sữa bột đầu tiên của Việt Nam.
-                  </p>
-                  <p class="text_content">
-                    Năm 1988, Vinamilk tiếp quản và đầu tư để khôi phục lại
-                    một nhà máy của nước ngoài, vốn “đắp chiếu” nhiều năm sau
-                    chiến tranh. Thấy lon sữa bột đầu tiên được làm ra bởi
-                    chính bàn tay khối óc người Việt không được người tiêu
-                    dùng mặn mà và chịu sức ép cạnh tranh trước hàng ngoại,
-                    doanh nghiệp hiểu rằng ngoài thời gian thì chính chất
-                    lượng sẽ là yếu tố quyết định để thay đổi quan niệm chuộng
-                    hàng ngoại của người tiêu dùng bấy giờ.
-                  </p>
-                  <p class="text_content">
-                    Một mặt tháo gỡ thị trường trong nước mặt khác bà cũng tìm
-                    đường để xuất khẩu sữa bột Việt ra nước ngoài. Quyết tâm
-                    giành hợp đồng xuất khẩu bằng được, bà cùng đoàn 27 đại
-                    diện Việt Nam tiến vào biên giới Iraq giữa đợt oanh kích
-                    năm 1998. Dưới tầng hầm ký bản hợp đồng giữa 1-2h sáng,
-                    phía trên đầu là tên lửa nhả đạn, khói cuộn đầy trời. Cũng
-                    có sợ, có lo, nhưng "chiến trường" kinh doanh là nơi người
-                    nữ lãnh đạo quan tâm hơn cả, bất chấp hiểm nguy để tìm con
-                    đường dài hơi cho việc vận hành. Đến năm 2005, Vinamilk
-                    tiếp tục nối lại hợp đồng xuất khẩu vào thị trường Iraq,
-                    sau khi vượt qua 15 hãng sữa quốc tế. Nhờ vậy, kim ngạch
-                    xuất khẩu đạt dấu son với con số 137 triệu USD, tăng gấp
-                    ba lần so với 2004.
-                  </p>
-                </div>
-                <img src="assets/images/img_2.png" alt="" class="img_860" data-aos="zoom-in" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="300" />
-                <p class="des_image" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-                  data-aos-offset="200">
-                  Một trong những khách hàng nhí đầu tiên sử dụng sữa Dielac
-                  khi vừa ra mắt thị trường.
-                </p>
+                <p>&reg; VnExpress giữ bản quyền nội dung trên website này.</p>
+              </div>
+              <div class="txt_lienhe">
+                Hotline: <br />
+                <a href="tel:0838880123">083.888.0123 (Hà Nội)</a> <br />
+                <a href="tel:0822333555">082.233.3555 (TP HCM)</a>
               </div>
             </div>
-            <img src="assets/images/bg_red.png" alt="" class="img img_red" />
-            <div class="section_1_2">
-              <div class="group_image_416">
-                <img src="assets/images/group_3_1.png" data-aos="fade-right" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-                <img src="assets/images/group_3_2.png" data-aos="fade-left" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-                <img src="assets/images/group_3_3.png" data-aos="fade-up" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
+          </div>
+        </div>
+        <div id="ascrail2000" class="nicescroll-rails">
+          <div class="vne-hr1"></div>
+        </div>
+        <div id="ascrail2000-hr" class="nicescroll-rails">
+          <div class="vne-hr2"></div>
+        </div>
+      </div>
+      <!-- End Menu -->
+      <!-- Main Content -->
+      <div class="section-content clearfix">
+        <div class="wrapper-content">
+          <div id="overlay"></div>
+          <div class="my_container">
+            <div class="section_1">
+              <div class="section_1_1">
+                <div class="group_image pc">
+                  <img
+                    src="assets/images/group_1_2.png"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="400"
+                    data-aos-delay="500"
+                  />
+                  <img src="assets/images/group_1_1.png" />
+                  <img
+                    src="assets/images/group_1_2.png"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="400"
+                    data-aos-delay="500"
+                  />
+                  <img
+                    src="assets/images/group_1_3.png"
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    data-aos-offset="400"
+                    data-aos-delay="1000"
+                  />
+                  <img
+                    src="assets/images/group_1_4.png"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="400"
+                    data-aos-delay="1200"
+                  />
+                </div>
+                <div class="group_image mobile">
+                  <img
+                    src="assets/images/group_1_2_mobile.png"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="400"
+                    data-aos-delay="500"
+                  />
+                  <img src="assets/images/group_1_1_mobile.png" />
+                  <img
+                    src="assets/images/group_1_2_mobile.png"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="400"
+                    data-aos-delay="500"
+                  />
+                  <img
+                    src="assets/images/group_1_3_mobile.png"
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000"
+                    data-aos-offset="400"
+                    data-aos-delay="1000"
+                  />
+                  <img
+                    src="assets/images/group_1_4_mobile.png"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="400"
+                    data-aos-delay="1200"
+                  />
+                </div>
+                <div class="paper">
+                  <p
+                    class="text_title"
+                    data-aos="zoom-in"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                  >
+                    Nhìn nhà máy “đắp chiếu” sau chiến tranh, ít ai ngờ đây sẽ
+                    trở thành cái nôi cho thương hiệu sữa bột trẻ em đầu tiên
+                    của Việt Nam, người khai sinh là bà Mai Kiều Liên - khi đó
+                    mới ngoài 30 tuổi.
+                  </p>
+                  <img
+                    style="margin-bottom: 10px"
+                    src="assets/images/img_1.png"
+                    alt=""
+                    class="img_560"
+                    data-aos="zoom-in"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                  />
+                  <div
+                    class="group_text group_text_1"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                  >
+                    <p class="text_content">
+                      Những ký ức, cột mốc trong hành trình khai phá thị trường
+                      sữa bột trẻ em tuy khó khăn nhưng đầy máu lửa gắn liền với
+                      bà Mai Kiều Liên, người trực tiếp khai sinh ra Dielac -
+                      thương hiệu sữa bột đầu tiên của Việt Nam.
+                    </p>
+                    <p class="text_content">
+                      Năm 1988, Vinamilk tiếp quản và đầu tư để khôi phục lại
+                      một nhà máy của nước ngoài, vốn “đắp chiếu” nhiều năm sau
+                      chiến tranh. Thấy lon sữa bột đầu tiên được làm ra bởi
+                      chính bàn tay khối óc người Việt không được người tiêu
+                      dùng mặn mà và chịu sức ép cạnh tranh trước hàng ngoại,
+                      doanh nghiệp hiểu rằng ngoài thời gian thì chính chất
+                      lượng sẽ là yếu tố quyết định để thay đổi quan niệm chuộng
+                      hàng ngoại của người tiêu dùng bấy giờ.
+                    </p>
+                    <p class="text_content">
+                      Một mặt tháo gỡ thị trường trong nước mặt khác bà cũng tìm
+                      đường để xuất khẩu sữa bột Việt ra nước ngoài. Quyết tâm
+                      giành hợp đồng xuất khẩu bằng được, bà cùng đoàn 27 đại
+                      diện Việt Nam tiến vào biên giới Iraq giữa đợt oanh kích
+                      năm 1998. Dưới tầng hầm ký bản hợp đồng giữa 1-2h sáng,
+                      phía trên đầu là tên lửa nhả đạn, khói cuộn đầy trời. Cũng
+                      có sợ, có lo, nhưng "chiến trường" kinh doanh là nơi người
+                      nữ lãnh đạo quan tâm hơn cả, bất chấp hiểm nguy để tìm con
+                      đường dài hơi cho việc vận hành. Đến năm 2005, Vinamilk
+                      tiếp tục nối lại hợp đồng xuất khẩu vào thị trường Iraq,
+                      sau khi vượt qua 15 hãng sữa quốc tế. Nhờ vậy, kim ngạch
+                      xuất khẩu đạt dấu son với con số 137 triệu USD, tăng gấp
+                      ba lần so với 2004.
+                    </p>
+                  </div>
+                  <img
+                    src="assets/images/img_2.png"
+                    alt=""
+                    class="img_860"
+                    data-aos="zoom-in"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                  />
+                  <p
+                    class="des_image"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    data-aos-offset="200"
+                  >
+                    Một trong những khách hàng nhí đầu tiên sử dụng sữa Dielac
+                    khi vừa ra mắt thị trường.
+                  </p>
+                </div>
               </div>
-              <div class="group_text group_text_2" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-offset="300">
-                <p class="text_content">
-                  Năm 1976, bà Mai Kiều Liên tốt nghiệp ngành sữa tại Nga. Về
-                  nước, năm 1982 bà bắt đầu từ vị trí kỹ sư, quản đốc, kỹ
-                  thuật văn phòng rồi Phó giám đốc nhà máy sữa Thống Nhất. Đến
-                  năm 1984, bà được bổ nhiệm là Phó tổng giám đốc phụ trách
-                  kinh tế của Xí nghiệp liên hiệp Sữa - Cà phê - Bánh kẹo I
-                  (tiền thân của Vinamilk) khi mới 31 tuổi.
-                </p>
-                <p class="text_content">
-                  Bà Mai Kiều Liên nhớ lại, ngày ấy cuộc sống vô cùng khó
-                  khăn. Nền kinh tế kế hoạch hóa, hầu hết sinh hoạt đều do Nhà
-                  nước chi trả. Các gia đình xếp hàng, đổi tem phiếu lấy nhu
-                  yếu phẩm hàng ngày. Có người dùng gạch "giữ chỗ" nhưng đến
-                  lượt thì không còn hàng, đành về tay không.
-                </p>
-                <p class="text_content">
-                  Sữa, thời ấy là xa xỉ phẩm. Những hộp sữa đặc vẹo vọ nhưng
-                  lại là niềm mơ ước của mọi đứa trẻ. Ngày thường mẹ sẽ giấu
-                  đi, đến khi nhà có người ốm mới mang ra, pha thêm nước nóng
-                  để uống. Đám trẻ bâu quanh cửa sổ, hít hà mùi sữa cho đỡ
-                  thèm. "Tặng sữa còn quý hơn tặng tiền", là câu nói cửa miệng
-                  của nhiều người ở thế kỷ trước. Bức tranh ấy trở thành niềm
-                  thôi thúc với bà Mai Kiều Liên: làm sao để xây dựng nền công
-                  nghiệp sữa cho Việt Nam, bình dân hóa ngành sữa bột trẻ em
-                  với những sản phẩm đủ dinh dưỡng, vừa túi tiền.
-                </p>
-                <p class="text_content">
-                  Vinamilk được giao phụ trách hai nhà máy Trường Thọ và Thống
-                  Nhất. Còn một nhà máy khác (về sau được mang tên Dielac) vốn
-                  của một tập đoàn nước ngoài xây dựng nhưng chưa kịp hoàn
-                  thiện, hệ thống điều khiển vẫn dở dang. Vậy nên sau khi Nhà
-                  nước tiếp quản năm 1975, nhà máy này "đắp chiếu" suốt hơn
-                  chục năm liền.
-                </p>
-                <p class="text_content">
-                  Năm 1986, khi vốn tự có của Vinamilk đạt mức 20 tỷ đồng, bà
-                  Mai Kiều Liên mới nghĩ tới chuyện phục hồi nhà máy trên,
-                  thực hiện giấc mơ sản xuất sữa bột cho trẻ em Việt.
-                </p>
-              </div>
-              <div class="group_image_1110 pc">
-                <img src="assets/images/group_2_1.png" data-aos="fade-right" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="300" data-aos-delay="200" />
-                <img src="assets/images/group_2_2.png" data-aos="fade-left" data-aos-easing="linear"
-                  data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-              </div>
-              <p class="des_image pc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-                data-aos-offset="200">
-                Những mẻ sữa đầu tiên ra lò từ nhà máy Dielac năm 1989.
-              </p>
-              <img src="assets/images/img_3.png" alt="" class="img img_530 pc" data-aos="fade-up"
-                data-aos-easing="linear" data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-              <p class="des_image pc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-                data-aos-offset="200">
-                Nhà máy hiện nay có dây chuyền hiện đại, tháp sấy công suất
-                lớn.
-              </p>
-              <div class="group_image_1110_mobile mobile">
-                <img src="assets/images/group_2_1_mobile.png" alt="" class=" img img_590">
-                <img src="assets/images/group_2_2_mobile.png" alt="" class=" img img_480">
-                <p class="des_image mobile" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-                  data-aos-offset="200">
+              <img src="assets/images/bg_red.png" alt="" class="img img_red" />
+              <div class="section_1_2">
+                <div class="group_image_416">
+                  <img
+                    src="assets/images/group_3_1.png"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="200"
+                  />
+                  <img
+                    src="assets/images/group_3_2.png"
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="200"
+                  />
+                  <img
+                    src="assets/images/group_3_3.png"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="200"
+                  />
+                </div>
+                <div
+                  class="group_text group_text_2"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="300"
+                >
+                  <p class="text_content">
+                    Năm 1976, bà Mai Kiều Liên tốt nghiệp ngành sữa tại Nga. Về
+                    nước, năm 1982 bà bắt đầu từ vị trí kỹ sư, quản đốc, kỹ
+                    thuật văn phòng rồi Phó giám đốc nhà máy sữa Thống Nhất. Đến
+                    năm 1984, bà được bổ nhiệm là Phó tổng giám đốc phụ trách
+                    kinh tế của Xí nghiệp liên hiệp Sữa - Cà phê - Bánh kẹo I
+                    (tiền thân của Vinamilk) khi mới 31 tuổi.
+                  </p>
+                  <p class="text_content">
+                    Bà Mai Kiều Liên nhớ lại, ngày ấy cuộc sống vô cùng khó
+                    khăn. Nền kinh tế kế hoạch hóa, hầu hết sinh hoạt đều do Nhà
+                    nước chi trả. Các gia đình xếp hàng, đổi tem phiếu lấy nhu
+                    yếu phẩm hàng ngày. Có người dùng gạch "giữ chỗ" nhưng đến
+                    lượt thì không còn hàng, đành về tay không.
+                  </p>
+                  <p class="text_content">
+                    Sữa, thời ấy là xa xỉ phẩm. Những hộp sữa đặc vẹo vọ nhưng
+                    lại là niềm mơ ước của mọi đứa trẻ. Ngày thường mẹ sẽ giấu
+                    đi, đến khi nhà có người ốm mới mang ra, pha thêm nước nóng
+                    để uống. Đám trẻ bâu quanh cửa sổ, hít hà mùi sữa cho đỡ
+                    thèm. "Tặng sữa còn quý hơn tặng tiền", là câu nói cửa miệng
+                    của nhiều người ở thế kỷ trước. Bức tranh ấy trở thành niềm
+                    thôi thúc với bà Mai Kiều Liên: làm sao để xây dựng nền công
+                    nghiệp sữa cho Việt Nam, bình dân hóa ngành sữa bột trẻ em
+                    với những sản phẩm đủ dinh dưỡng, vừa túi tiền.
+                  </p>
+                  <p class="text_content">
+                    Vinamilk được giao phụ trách hai nhà máy Trường Thọ và Thống
+                    Nhất. Còn một nhà máy khác (về sau được mang tên Dielac) vốn
+                    của một tập đoàn nước ngoài xây dựng nhưng chưa kịp hoàn
+                    thiện, hệ thống điều khiển vẫn dở dang. Vậy nên sau khi Nhà
+                    nước tiếp quản năm 1975, nhà máy này "đắp chiếu" suốt hơn
+                    chục năm liền.
+                  </p>
+                  <p class="text_content">
+                    Năm 1986, khi vốn tự có của Vinamilk đạt mức 20 tỷ đồng, bà
+                    Mai Kiều Liên mới nghĩ tới chuyện phục hồi nhà máy trên,
+                    thực hiện giấc mơ sản xuất sữa bột cho trẻ em Việt.
+                  </p>
+                </div>
+                <div class="group_image_1110 pc">
+                  <img
+                    src="assets/images/group_2_1.png"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="200"
+                  />
+                  <img
+                    src="assets/images/group_2_2.png"
+                    data-aos="fade-left"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="500"
+                  />
+                </div>
+                <p
+                  class="des_image pc"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                  data-aos-offset="300"
+                >
                   Những mẻ sữa đầu tiên ra lò từ nhà máy Dielac năm 1989.
                 </p>
-                <img src="assets/images/img_3.png" alt="" class="img img img_480 mobile" data-aos="fade-up"
-                  data-aos-easing="linear" data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-                <p class="des_image mobile" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-                  data-aos-offset="200">
+                <img
+                  src="assets/images/img_3.png"
+                  alt=""
+                  class="img img_530 pc"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="300"
+                  data-aos-delay="500"
+                />
+                <p
+                  class="des_image pc"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                  data-aos-offset="300"
+                >
                   Nhà máy hiện nay có dây chuyền hiện đại, tháp sấy công suất
                   lớn.
                 </p>
-              </div>
-              <div class="group_text group_text_3" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800"
-                data-aos-offset="300">
-                <p class="text_content">
-                  Vì sao không làm sớm hơn? Thời đó doanh nghiệp chịu khó khăn
-                  chồng chất trong bối cảnh vừa bị cấm vận, miền Bắc gặp chiến
-                  tranh. Nguyên vật liệu không có nên việc sản xuất gần như
-                  "cầm hơi". Hai nhà máy Trường Thọ và Thống Nhất công suất
-                  196 triệu hộp mỗi năm nhưng sản xuất thực tế chỉ 8 triệu hộp
-                  mỗi năm, cũng chỉ vì không có nguyên vật liệu.
-                </p>
-                <p class="text_content">
-                  Ý nghĩ nhen nhóm, nhưng làm sao thành hình? Lợi thế của bà
-                  Mai Kiều Liên đến từ nền tảng kiến thức vững chắc. Quá trình
-                  đào tạo ở Nga không chỉ cung cấp kiến thức, công nghệ chế
-                  biến sữa, bà còn được học các kiến thức về máy móc thiết bị,
-                  tự động hóa - tất cả thông tin chuyên ngành. Đề tài luận án
-                  tốt nghiệp của bà cũng là thiết kế một nhà máy sữa bột trẻ
-                  em với 500 tấn sữa một ngày, phải lo khí, điện, nước, công
-                  nghệ bố trí mặt bằng, máy móc, dây chuyền chế biên…
-                </p>
-                <p class="text_content">
-                  Từ kiến thức đó, bà hiểu hướng đi tiếp theo của nhà máy: cần
-                  đến một hệ thống tự động hóa để vận hành. Nhưng đi đâu để
-                  kiếm? Thời bấy giờ, Vinamilk nhận được hai lời đề nghị. Một
-                  là công ty Pháp, yêu cầu 3 triệu USD; đơn vị thứ hai đưa giá
-                  2,7 triệu USD để phục hồi nhà máy. "Lúc đó công ty không có
-                  đồng USD nào. Có bao nhiêu ngoại tệ là lo nhập nguyên vật
-                  liệu để tái tạo, sản xuất, tạo công ăn việc làm", bà nhớ
-                  lại.
-                </p>
-                <p class="text_content">
-                  Phần vì chi phí phục hồi quá cao, phần vì không có ngoại tệ
-                  để thanh toán chi phí, bà Mai Kiều Liên quyết định dùng chất
-                  xám Việt để thực hiện kế hoạch phục hồi nhà máy cũ. Là người
-                  trong nghề, có kiến thức, có sách vở, bà nảy ra ý nghĩ xây
-                  dựng đội ngũ chuyên về tự động hóa - kết hợp các kỹ sư của
-                  Vinamilk và các nhà khoa học Việt Nam. Đội ngũ các nhà khoa
-                  học đến nhà máy khảo sát, bảo rằng làm được, giá chỉ 500.000
-                  USD. Quan trọng nhất, họ đồng ý nhận thanh toán bằng tiền
-                  Việt. Và đây chính là bước đầu tiên trong hành trình của
-                  thương hiệu sữa bột đầu tiên của Việt Nam, mang tên Dielac.
-                </p>
-              </div>
-
-              <div class="section_1_3">
-                <div class="top"></div>
-                <div class="bottom"></div>
-                <div class="bg_red_2"></div>
-                <div class="paper_1_3"></div>
-                <div class="hoa_tiet"></div>
-                <div class="paper_content">
-                  <div class="group_text group_text_4" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="800" data-aos-offset="300">
-                    <p class="text_content">
-                      Dự án thực hiện suốt một năm. Đến năm 1989, dây chuyền
-                      chạy thử, cả đội ngũ xúm lại, chăm chú quan sát những mẻ
-                      sữa đầu tiên ra lò. Điều lo lắng nhất của Mai Kiều Liên
-                      lúc này là chất lượng sản phẩm có đạt hay không. Có sữa,
-                      bà lập tức mang đến phòng thí nghiệm, pha với nướ c ấm,
-                      hồi hộp chờ kết quả.
-                    </p>
-                    <p class="text_content">
-                      "Sữa không bị tách bơ, chúng tôi biết mình đã thành
-                      công", vị Tổng giám đốc tự hào.
-                    </p>
-                  </div>
-                  <div class="group_image_462">
-                    <img src="assets/images/group_4_1.png" data-aos="fade-right" data-aos-easing="linear"
-                      data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_4_2.png" data-aos="fade-left" data-aos-easing="linear"
-                      data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_4_3.png" data-aos="fade-up" data-aos-easing="linear"
-                      data-aos-duration="800" data-aos-offset="300" data-aos-delay="500" />
-                  </div>
-                  <div class="group_text group_text_4" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="800" data-aos-offset="300">
-                    <p class="text_content">
-                      Năm 1989, những lon sữa Dielac đầu tiên xuất xưởng, đưa
-                      lên xe tải của Vinamilk đến các điểm bán. Đi chào hàng
-                      nhiều nhưng không ai mua, ban lãnh đạo công ty đặt câu
-                      hỏi: lý do là gì?
-                    </p>
-                    <p class="text_content">
-                      Bà Liên phân tích, người Việt lúc đó vốn mang tâm lý
-                      nghi ngại với các sản phẩm sản xuất trong nước, chưa kể
-                      đó lại là một sản phẩm mà Việt Nam chưa sản xuất được
-                      bao giờ như sữa bột trẻ em. Quan niệm "rẻ thì không chất
-                      lượng" khiến người dùng, ngay cả ở phân khúc thu nhập
-                      thấp vẫn luôn tin rằng những sản phẩm sữa đắt tiền sẽ
-                      tương ứng chất lượng cao. Từ thực tế đó, ban lãnh đạo
-                      công ty xác định: chúng ta cần chứng minh chất lượng của
-                      sữa Việt không thua gì sữa ngoại. Vinamilk đã đưa sản
-                      phẩm sữa bột Dielac đến các trung tâm kiểm nghiệm chất
-                      lượng tại Áo, Singapore.
-                    </p>
-                    <p class="text_content">
-                      Thuyết phục bằng chất lượng, đó là kim chỉ nam và chiến
-                      lược nhất quán của Vinamilk khi đó. Dielac được sản xuất
-                      theo những công thức tiên tiến nhất và bám sát nguyên
-                      tắc sữa chứa nhiều thành phần gần giống với sữa mẹ nhất
-                      có thể. Ngoài ra, đơn vị hợp tác với các tổ chức quốc tế
-                      chuyên về ứng dụng vi chất và vi sinh để phát triển sản
-                      phẩm phù hợp thể chất cũng như tình trạng dinh dưỡng cụ
-                      thể của trẻ em Việt Nam.
-                    </p>
-                    <p class="text_content">
-                      Được phát triển dựa trên các công thức quốc tế nhưng
-                      phải phù hợp với thể trạng trẻ em Việt là yếu tố tiên
-                      quyết mà Vinamilk xác định đối với các sản phẩm dinh
-                      dưỡng của mình. Ví dụ sữa ngoại thường gia tăng vitamin
-                      A và D vì trẻ nhỏ ở vùng lạnh, thiếu ánh nắng mặt trời.
-                      Nhưng với trẻ Việt Nam thì chế độ ăn thiếu kẽm, sắt.
-                      Công thức sữa được nghiên cứu phát triển, có những điều
-                      chỉnh, ứng dụng thành tựu nghiên cứu mới nhất nhằm đem
-                      đến nguồn dinh dưỡng tối ưu cho trẻ nhỏ.
-                    </p>
-                  </div>
-                  <div class="group_image_780 group_image_5">
-                    <img src="assets/images/group_5_1.png" data-aos="fade-right" data-aos-easing="linear"
-                      data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
-                    <img src="assets/images/group_5_2.png" data-aos="fade-left" data-aos-easing="linear"
-                      data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
-                  </div>
-                  <p class="des_image" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="500"
-                    data-aos-offset="200">
-                    Phòng kiểm tra chất lượng sản phẩm tại nhà máy sữa bột xưa
-                    và nay.
+                <div class="group_image_1110_mobile mobile">
+                  <img
+                    src="assets/images/group_2_1_mobile.png"
+                    alt=""
+                    class="img img_590"
+                  />
+                  <img
+                    src="assets/images/group_2_2_mobile.png"
+                    alt=""
+                    class="img img_480"
+                  />
+                  <p
+                    class="des_image mobile"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    data-aos-offset="300"
+                  >
+                    Những mẻ sữa đầu tiên ra lò từ nhà máy Dielac năm 1989.
                   </p>
-                  <div class="group_text group_text_5" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="800" data-aos-offset="300">
-                    <p class="text_content">
-                      Nhưng đó vẫn chưa phải đã hết thử thách. Tuy đã kiểm
-                      nghiệm chất lượng nhưng người dùng phải dùng thử mới
-                      tin. Đối với Vinamilk, công ty hiểu đây là nhu cầu tất
-                      yếu khi nhãn hiệu Dielac còn mới, người mẹ nào cũng đặc
-                      biệt kỹ lưỡng khi chọn mua các sản phẩm dinh dưỡng cho
-                      các con của mình. Chính vì vậy, đội ngũ kinh doanh và
-                      tiếp thị của công ty tiếp tục kiên trì giới thiệu,
-                      thuyết phục để được đặt sản phẩm ở các cửa hàng, tạp
-                      hóa. Công ty chấp nhận không thu tiền trước, nếu có ai
-                      mua thì sẽ quay lại lấy sau.
-                    </p>
-                    <p class="text_content">
-                      Yếu tố cuối cùng để thuyết phục khách hàng chính là giá
-                      bán. Giữa thời điểm bao cấp, một lon sữa ngoại khi ấy
-                      đắt gấp đôi hộp sữa Dielac, nhưng có thể nói chất lượng
-                      tương đương nhau. Phép so sánh này khiến nhiều người
-                      dùng dần thay đổi hành vi mua hàng, lựa chọn sữa Việt để
-                      con em mình có thể tiếp cận nguồn dinh dưỡng lành mạnh
-                      một cách lâu dài. Kể cả những gia đình thu nhập thấp vẫn
-                      có thể cho con uống sữa - giấc mơ mà trước thời điểm
-                      1989, họ chưa bao giờ nghĩ tới.
-                    </p>
-                  </div>
-                  <div class="group_image_1480 pc">
-                    <img src="assets/images/group_6_1.png" data-aos="fade-right" data-aos-easing="linear"
-                      data-aos-duration="800" data-aos-offset="400" data-aos-delay="200" />
-                    <img src="assets/images/group_6_2.png" data-aos="fade-left" data-aos-easing="linear"
-                      data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
-                  </div>
-                  <div class="group_image_container_4 mobile">
-                    <div class="group_image_1570">
-                      <img src="assets/images/group_6_1_mobile.png" data-aos="fade-right" data-aos-easing="linear"
-                        data-aos-duration="800" data-aos-offset="400" data-aos-delay="200" />
-                      <img src="assets/images/group_6_2_mobile.png" data-aos="fade-left" data-aos-easing="linear"
-                        data-aos-duration="800" data-aos-offset="400" data-aos-delay="500" />
+                  <img
+                    src="assets/images/img_3.png"
+                    alt=""
+                    class="img img img_480 mobile"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="500"
+                  />
+                  <p
+                    class="des_image mobile"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="500"
+                    data-aos-offset="300"
+                  >
+                    Nhà máy hiện nay có dây chuyền hiện đại, tháp sấy công suất
+                    lớn.
+                  </p>
+                </div>
+                <div
+                  class="group_text group_text_3"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-offset="300"
+                >
+                  <p class="text_content">
+                    Vì sao không làm sớm hơn? Thời đó doanh nghiệp chịu khó khăn
+                    chồng chất trong bối cảnh vừa bị cấm vận, miền Bắc gặp chiến
+                    tranh. Nguyên vật liệu không có nên việc sản xuất gần như
+                    "cầm hơi". Hai nhà máy Trường Thọ và Thống Nhất công suất
+                    196 triệu hộp mỗi năm nhưng sản xuất thực tế chỉ 8 triệu hộp
+                    mỗi năm, cũng chỉ vì không có nguyên vật liệu.
+                  </p>
+                  <p class="text_content">
+                    Ý nghĩ nhen nhóm, nhưng làm sao thành hình? Lợi thế của bà
+                    Mai Kiều Liên đến từ nền tảng kiến thức vững chắc. Quá trình
+                    đào tạo ở Nga không chỉ cung cấp kiến thức, công nghệ chế
+                    biến sữa, bà còn được học các kiến thức về máy móc thiết bị,
+                    tự động hóa - tất cả thông tin chuyên ngành. Đề tài luận án
+                    tốt nghiệp của bà cũng là thiết kế một nhà máy sữa bột trẻ
+                    em với 500 tấn sữa một ngày, phải lo khí, điện, nước, công
+                    nghệ bố trí mặt bằng, máy móc, dây chuyền chế biên…
+                  </p>
+                  <p class="text_content">
+                    Từ kiến thức đó, bà hiểu hướng đi tiếp theo của nhà máy: cần
+                    đến một hệ thống tự động hóa để vận hành. Nhưng đi đâu để
+                    kiếm? Thời bấy giờ, Vinamilk nhận được hai lời đề nghị. Một
+                    là công ty Pháp, yêu cầu 3 triệu USD; đơn vị thứ hai đưa giá
+                    2,7 triệu USD để phục hồi nhà máy. "Lúc đó công ty không có
+                    đồng USD nào. Có bao nhiêu ngoại tệ là lo nhập nguyên vật
+                    liệu để tái tạo, sản xuất, tạo công ăn việc làm", bà nhớ
+                    lại.
+                  </p>
+                  <p class="text_content">
+                    Phần vì chi phí phục hồi quá cao, phần vì không có ngoại tệ
+                    để thanh toán chi phí, bà Mai Kiều Liên quyết định dùng chất
+                    xám Việt để thực hiện kế hoạch phục hồi nhà máy cũ. Là người
+                    trong nghề, có kiến thức, có sách vở, bà nảy ra ý nghĩ xây
+                    dựng đội ngũ chuyên về tự động hóa - kết hợp các kỹ sư của
+                    Vinamilk và các nhà khoa học Việt Nam. Đội ngũ các nhà khoa
+                    học đến nhà máy khảo sát, bảo rằng làm được, giá chỉ 500.000
+                    USD. Quan trọng nhất, họ đồng ý nhận thanh toán bằng tiền
+                    Việt. Và đây chính là bước đầu tiên trong hành trình của
+                    thương hiệu sữa bột đầu tiên của Việt Nam, mang tên Dielac.
+                  </p>
+                </div>
+
+                <div class="section_1_3">
+                  <div class="top"></div>
+                  <div class="bottom"></div>
+                  <div class="bg_red_2"></div>
+                  <div class="paper_1_3"></div>
+                  <div class="hoa_tiet"></div>
+                  <div class="paper_content">
+                    <div
+                      class="group_text group_text_4"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="800"
+                      data-aos-offset="300"
+                    >
+                      <p class="text_content">
+                        Dự án thực hiện suốt một năm. Đến năm 1989, dây chuyền
+                        chạy thử, cả đội ngũ xúm lại, chăm chú quan sát những mẻ
+                        sữa đầu tiên ra lò. Điều lo lắng nhất của Mai Kiều Liên
+                        lúc này là chất lượng sản phẩm có đạt hay không. Có sữa,
+                        bà lập tức mang đến phòng thí nghiệm, pha với nướ c ấm,
+                        hồi hộp chờ kết quả.
+                      </p>
+                      <p class="text_content">
+                        "Sữa không bị tách bơ, chúng tôi biết mình đã thành
+                        công", vị Tổng giám đốc tự hào.
+                      </p>
                     </div>
-                  </div>
-                  <p class="des_image" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="700"
-                    data-aos-offset="200">
-                    Cửa hàng bày bán sản phẩm Vinamilk ở thập niên 90 thế kỷ
-                    trước và ngày nay.
-                  </p>
-                  <div class="group_text group_text_6" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="800" data-aos-offset="300">
-                    <p class="text_content">
-                      Chất lượng tốt và giá thành hợp lý, đến nay vẫn là công
-                      thức căn bản giúp Vinamilk dẫn đầu thị trường.
+                    <div class="group_image_462">
+                      <img
+                        src="assets/images/group_4_1.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="800"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                      <img
+                        src="assets/images/group_4_2.png"
+                        data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="800"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                      <img
+                        src="assets/images/group_4_3.png"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="800"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                    </div>
+                    <div
+                      class="group_text group_text_4"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="800"
+                      data-aos-offset="300"
+                    >
+                      <p class="text_content">
+                        Năm 1989, những lon sữa Dielac đầu tiên xuất xưởng, đưa
+                        lên xe tải của Vinamilk đến các điểm bán. Đi chào hàng
+                        nhiều nhưng không ai mua, ban lãnh đạo công ty đặt câu
+                        hỏi: lý do là gì?
+                      </p>
+                      <p class="text_content">
+                        Bà Liên phân tích, người Việt lúc đó vốn mang tâm lý
+                        nghi ngại với các sản phẩm sản xuất trong nước, chưa kể
+                        đó lại là một sản phẩm mà Việt Nam chưa sản xuất được
+                        bao giờ như sữa bột trẻ em. Quan niệm "rẻ thì không chất
+                        lượng" khiến người dùng, ngay cả ở phân khúc thu nhập
+                        thấp vẫn luôn tin rằng những sản phẩm sữa đắt tiền sẽ
+                        tương ứng chất lượng cao. Từ thực tế đó, ban lãnh đạo
+                        công ty xác định: chúng ta cần chứng minh chất lượng của
+                        sữa Việt không thua gì sữa ngoại. Vinamilk đã đưa sản
+                        phẩm sữa bột Dielac đến các trung tâm kiểm nghiệm chất
+                        lượng tại Áo, Singapore.
+                      </p>
+                      <p class="text_content">
+                        Thuyết phục bằng chất lượng, đó là kim chỉ nam và chiến
+                        lược nhất quán của Vinamilk khi đó. Dielac được sản xuất
+                        theo những công thức tiên tiến nhất và bám sát nguyên
+                        tắc sữa chứa nhiều thành phần gần giống với sữa mẹ nhất
+                        có thể. Ngoài ra, đơn vị hợp tác với các tổ chức quốc tế
+                        chuyên về ứng dụng vi chất và vi sinh để phát triển sản
+                        phẩm phù hợp thể chất cũng như tình trạng dinh dưỡng cụ
+                        thể của trẻ em Việt Nam.
+                      </p>
+                      <p class="text_content">
+                        Được phát triển dựa trên các công thức quốc tế nhưng
+                        phải phù hợp với thể trạng trẻ em Việt là yếu tố tiên
+                        quyết mà Vinamilk xác định đối với các sản phẩm dinh
+                        dưỡng của mình. Ví dụ sữa ngoại thường gia tăng vitamin
+                        A và D vì trẻ nhỏ ở vùng lạnh, thiếu ánh nắng mặt trời.
+                        Nhưng với trẻ Việt Nam thì chế độ ăn thiếu kẽm, sắt.
+                        Công thức sữa được nghiên cứu phát triển, có những điều
+                        chỉnh, ứng dụng thành tựu nghiên cứu mới nhất nhằm đem
+                        đến nguồn dinh dưỡng tối ưu cho trẻ nhỏ.
+                      </p>
+                    </div>
+                    <div class="group_image_780 group_image_5">
+                      <img
+                        src="assets/images/group_5_1.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="800"
+                        data-aos-offset="400"
+                        data-aos-delay="500"
+                      />
+                      <img
+                        src="assets/images/group_5_2.png"
+                        data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="800"
+                        data-aos-offset="400"
+                        data-aos-delay="500"
+                      />
+                    </div>
+                    <p
+                      class="des_image"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="500"
+                      data-aos-offset="300"
+                    >
+                      Phòng kiểm tra chất lượng sản phẩm tại nhà máy sữa bột xưa
+                      và nay.
                     </p>
-                    <p class="text_content">
-                      Xoay chuyển quan niệm người tiêu dùng từ nghi ngờ đến
-                      tin tưởng và chọn dùng sữa bột trẻ em “made in Vietnam”,
-                      đến nay Dielac đã trở thành giải pháp dinh dưỡng cho
-                      hàng triệu người dùng Việt Nam. Nhãn hiệu này liên tục
-                      dẫn đầu thị trường dù chịu nhiều áp lực cạnh tranh, góp
-                      phần không nhỏ vào câu chuyện thành công chung của
-                      Vinamilk.
-                    </p>
-                  </div>
-                  <div class="group_image_510">
-                    <img src="assets/images/group_7_1.png" data-aos="fade-right" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_7_2.png" data-aos="fade-right" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_7_3.png" data-aos="fade-up" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                  </div>
-                  <div class="group_text group_text_7" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="800" data-aos-offset="300">
-                    <p class="text_content">
-                      Cột mốc mà bà Mai Kiều Liên mãi không quên chính là thời
-                      điểm giành được hợp đồng xuất khẩu vào năm 1998, cách
-                      đây đúng 25 năm. Dielac cũng là sản phẩm đầu tiên của
-                      Vinamilk được "xuất ngoại", tiếp tục là mặt hàng xuất
-                      khẩu chủ lực của hãng cho đến ngày nay. Nhãn sữa đóng
-                      góp vào sự hiện diện của Vinamilk tại 57 quốc gia và
-                      vùng lãnh thổ, với tổng kim ngạch xuất khẩu lũy kế hơn
-                      2,6 tỷ USD.
-                    </p>
-                    <p class="text_content">
-                      Năm 1990, trước làn sóng hội nhập, các doanh nghiệp nhìn
-                      thấy rõ tình thế: xuất khẩu là yếu tố sống còn. Cơ hội
-                      đến một cách bất ngờ, năm 1996 Iraq có chương trình đổi
-                      dầu lấy lương thực. Để tiếp cận, bà Mai Kiều Liên ngỏ
-                      lời đề nghị rằng Vinamilk sẽ tài trợ hai container sữa
-                      Dielac với suy nghĩ rằng người ta dùng thử, tin tưởng
-                      thì cơ hội bán hàng của mình sẽ cao. Sau khi Chính phủ
-                      Iraq kiểm tra chất lượng và trực tiếp sang thăm nhà máy
-                      Dielac, họ đề nghị Vinamilk cung cấp 300 tấn sữa trong
-                      ba tháng.
-                    </p>
-                  </div>
-                  <img src="assets/images/img_4.png" alt="" class="img_1160 img pc" data-aos="zoom-in"
-                    data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                  <img src="assets/images/img_4_mobile.png" alt="" class="img_1160 img mobile" data-aos="zoom-in"
-                    data-aos-easing="linear" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                  <div class="group_text group_text_8" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="800" data-aos-offset="300" data-aos-delay="300">
-                    <p class="text_content">
-                      Ngay sau lời đề nghị của nước bạn, Vinamilk tham gia
-                      đoàn công tác 28 người của Việt Nam đến Iraq thực hiện
-                      cuộc đấu thầu quốc tế. Đoàn có nhiều doanh nghiệp, sữa
-                      là đơn vị đàm phán cuối cùng. Khoảng 1-2h sáng, khi
-                      chính thức ký tên lên bản hợp đồng, bà Mai Kiều Liên cảm
-                      thấy đầy tự hào. Bởi trước đó, không ai nghĩ Việt Nam có
-                      thể xuất khẩu sữa trẻ em, rằng sữa Việt Nam 100% là nhập
-                      ngoại.
-                    </p>
-                    <p class="text_content">
-                      Trở về nước, nhà máy Vinamilk gần như sáng đèn 24/24,
-                      đội ngũ lãnh đạo công ty cũng thường xuyên túc trực ở
-                      nhà máy cũng với anh em cán bộ, công nhân. Nỗ lực của
-                      toàn tập thể nhận về "quả ngọt", 300 tấn hàng hoàn thành
-                      đúng chỉ tiêu, giao cho đối tác. Từ đó, kim ngạch xuất
-                      khẩu giữa hai bên duy trì và bền vững trong suốt hơn 10
-                      năm sau đó.
-                    </p>
-                    <p class="text_content">
-                      Một câu chuyện vui mà xen lẫn sự tự hào được phòng Kinh
-                      doanh Quốc tế của Vinamilk kể lại rằng, khi đi thực tế
-                      thị trường ở các nước Trung Đông, người dân ở một số nơi
-                      đã quen thuộc với Dielac đến mức dùng từ “Dielac” để gọi
-                      thay cho sữa bột trẻ em.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="section_1_4 pc">
-                <p class="text_group_img" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800"
-                  data-aos-offset="300" data-aos-delay="500">
-                  Bà Mai Kiều Liên tại biên giới Iraq trong chuyến đi đấu thầu
-                  quốc tế năm 1998.
-                </p>
-                <div class="group_image_container">
-                  <div class="group_image_1570">
-                    <img src="assets/images/group_8_2.png" data-aos="fade-up" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_8_3.png" data-aos="fade-right" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_8_4.png" data-aos="fade-left" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                  </div>
-                  <p class="des_image" style="margin-bottom: 0; padding-bottom: 10px">
-                    Những cuộc thương thảo và chuyến hàng xuất khẩu đầu tiên.
-                  </p>
-                </div>
-              </div>
-
-              <div class="section_1_4 mobile">
-                <!-- k hieu  -->
-                <p class="text_group_img" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800"
-                  data-aos-offset="300" data-aos-delay="500">
-
-                </p>
-                <div class="group_image_container">
-                  <div class="group_image_1570">
-                    <img src="assets/images/group_8_2_mobile.png" data-aos="fade-up" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                  </div>
-                  <img src="assets/images/group_8_1_mobile.png" alt="" class="img img_526" style="margin-top: 10px ;">
-                  <p class="des_image" style="margin-bottom: 0; padding-bottom: 10px">
-                    Bà Mai Kiều Liên tại biên giới Iraq <br /> trong chuyến đi đấu thầu
-                    quốc tế năm 1998.
-                  </p>
-                  <div class="group_image_1570">
-                    <img src="assets/images/group_8_3_mobile.png" data-aos="fade-up" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_8_4_mobile.png" data-aos="fade-up" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                  </div>
-                  <p class="des_image" style="margin-bottom: 0; padding-bottom: 10px">
-                    Những cuộc thương thảo và chuyến hàng xuất khẩu đầu tiên.
-                  </p>
-                </div>
-              </div>
-
-
-              <div class="section_1_5">
-                <div class="group_text group_text_9" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800"
-                  data-aos-offset="300" data-aos-delay="300">
-                  <p class="text_content">
-                    “Những em bé đầu tiên uống sản phẩm này từ những ngày đầu
-                    của 25 năm trước, đến nay đã là những ông bố bà mẹ, tiếp
-                    tục lựa chọn Dielac để chăm sóc thế hệ tương lai, gửi gắm
-                    ước mơ về những em bé cao khỏe, thông minh”, ông Võ Trung
-                    Hiếu, Giám đốc Kinh doanh quốc tế của Vinamilk chia sẻ.
-                  </p>
-                  <p class="text_content">
-                    Những bước đi đầu tiên này cũng chính là nền tảng cho hoạt
-                    động kinh doanh quốc tế giữa Vinamilk với các đối tác khác
-                    tại Trung Đông lẫn toàn cầu cho đến tận hôm nay.
-                  </p>
-                </div>
-                <div class="group_image_container_2">
-                  <div class="left" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000"
-                    data-aos-offset="300" data-aos-delay="300">
-                    <img src="assets/images/group_9_1.png" alt="" />
-                    <p style="width: 80%; display: block" class="des_image">
-                      Những khách hàng quốc tế đầu tiên của Dielac năm 1989.
-                    </p>
-                  </div>
-                  <div class="rigt" data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000"
-                    data-aos-offset="300" data-aos-delay="300">
-                    <img src="assets/images/group_9_2.png" alt="" />
-                    <p class="des_image">
-                      Các sản phẩm của Vinamilk đến với thị trường quốc tế.
-                    </p>
-                  </div>
-                </div>
-                <div class="group_image_container_3">
-                  <div class="group_image_1570">
-                    <img src="assets/images/group_10_1.png" data-aos="fade-right" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_10_2.png" data-aos="fade-left" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                    <img src="assets/images/group_10_3.png" data-aos="fade-up" data-aos-easing="linear"
-                      data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                  </div>
-                  <div class="group_text group_text_10" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="1000" data-aos-offset="300" data-aos-delay="300">
-                    <p class="text_content">
-                      Trong nỗ lực xây dựng ngành công nghiệp sữa, Vinamilk
-                      không ngừng hiện đại hóa dây chuyền sản xuất.
-                    </p>
-                    <p class="text_content">
-                      Năm 2013, hãng khánh thành một siêu nhà máy sữa bột đầu
-                      tiên của Việt Nam tại Bình Dương. Vốn đầu tư 100 triệu
-                      USD, công suất 54.000 tấn một năm với tháp sấy khổng lồ,
-                      dây chuyền hiện đại khép kín. Đây là sự đầu tư chiến
-                      lược có tác động rất lớn để gia tăng năng lực sản xuất
-                      lẫn chất lượng sản phẩm, đưa ngành hàng sữa bột trẻ em
-                      của Vinamilk phát triển mạnh mẽ nhiều năm sau đó.
-                    </p>
-                    <p class="text_content">
-                      Cũng trong giai đoạn này, doanh nghiệp sữa Việt liên tục
-                      trở thành các đối tác chiến lược của Viện dinh dưỡng
-                      Quốc gia cùng những tập đoàn lớn như Chrs. Hansen, DSM,
-                      Dupont… để ứng dụng các nghiên cứu tiên tiến vào các sản
-                      phẩm sữa bột trẻ em.
-                    </p>
-                  </div>
-                  <div class="container_blue pc" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000"
-                    data-aos-offset="300" data-aos-delay="300">
-                    <div class="slider_container">
-                      <!-- Slider main container -->
-                      <div class="swiper-container">
-                        <!-- Additional required wrapper -->
-                        <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <img src="assets/images/slide_1.png" alt="" class="img img_slide" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/slide_2.png" alt="" class="img img_slide" />
-                          </div>
-                          <div class="swiper-slide">
-                            <img src="assets/images/slide_3.png" alt="" class="img img_slide" />
-                          </div>
-                        </div>
-                        <!-- If we need navigation buttons -->
-                        <!-- <div class="swiper-button-prev"></div>
-                          <div class="swiper-button-next"></div> -->
+                    <div
+                      class="group_text group_text_5"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="800"
+                      data-aos-offset="300"
+                    >
+                      <p class="text_content">
+                        Nhưng đó vẫn chưa phải đã hết thử thách. Tuy đã kiểm
+                        nghiệm chất lượng nhưng người dùng phải dùng thử mới
+                        tin. Đối với Vinamilk, công ty hiểu đây là nhu cầu tất
+                        yếu khi nhãn hiệu Dielac còn mới, người mẹ nào cũng đặc
+                        biệt kỹ lưỡng khi chọn mua các sản phẩm dinh dưỡng cho
+                        các con của mình. Chính vì vậy, đội ngũ kinh doanh và
+                        tiếp thị của công ty tiếp tục kiên trì giới thiệu,
+                        thuyết phục để được đặt sản phẩm ở các cửa hàng, tạp
+                        hóa. Công ty chấp nhận không thu tiền trước, nếu có ai
+                        mua thì sẽ quay lại lấy sau.
+                      </p>
+                      <p class="text_content">
+                        Yếu tố cuối cùng để thuyết phục khách hàng chính là giá
+                        bán. Giữa thời điểm bao cấp, một lon sữa ngoại khi ấy
+                        đắt gấp đôi hộp sữa Dielac, nhưng có thể nói chất lượng
+                        tương đương nhau. Phép so sánh này khiến nhiều người
+                        dùng dần thay đổi hành vi mua hàng, lựa chọn sữa Việt để
+                        con em mình có thể tiếp cận nguồn dinh dưỡng lành mạnh
+                        một cách lâu dài. Kể cả những gia đình thu nhập thấp vẫn
+                        có thể cho con uống sữa - giấc mơ mà trước thời điểm
+                        1989, họ chưa bao giờ nghĩ tới.
+                      </p>
+                    </div>
+                    <div class="group_image_1480 pc">
+                      <img
+                        src="assets/images/group_6_1.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="800"
+                        data-aos-offset="400"
+                        data-aos-delay="200"
+                      />
+                      <img
+                        src="assets/images/group_6_2.png"
+                        data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="800"
+                        data-aos-offset="400"
+                        data-aos-delay="500"
+                      />
+                    </div>
+                    <div class="group_image_container_4 mobile">
+                      <div class="group_image_1570">
+                        <img
+                          src="assets/images/group_6_1_mobile.png"
+                          data-aos="fade-right"
+                          data-aos-easing="linear"
+                          data-aos-duration="800"
+                          data-aos-offset="400"
+                          data-aos-delay="200"
+                        />
+                        <img
+                          src="assets/images/group_6_2_mobile.png"
+                          data-aos="fade-left"
+                          data-aos-easing="linear"
+                          data-aos-duration="800"
+                          data-aos-offset="400"
+                          data-aos-delay="500"
+                        />
                       </div>
                     </div>
-                    <p class="des_slider" style="margin-top: 0">
-                      Nhà máy Sữa bột Việt Nam tại Bình Dương với dây chuyền
-                      hiện đại.
+                    <p
+                      class="des_image"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="700"
+                      data-aos-offset="200"
+                    >
+                      Cửa hàng bày bán sản phẩm Vinamilk ở thập niên 90 thế kỷ
+                      trước và ngày nay.
+                    </p>
+                    <div
+                      class="group_text group_text_6"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="800"
+                      data-aos-offset="300"
+                    >
+                      <p class="text_content">
+                        Chất lượng tốt và giá thành hợp lý, đến nay vẫn là công
+                        thức căn bản giúp Vinamilk dẫn đầu thị trường.
+                      </p>
+                      <p class="text_content">
+                        Xoay chuyển quan niệm người tiêu dùng từ nghi ngờ đến
+                        tin tưởng và chọn dùng sữa bột trẻ em “made in Vietnam”,
+                        đến nay Dielac đã trở thành giải pháp dinh dưỡng cho
+                        hàng triệu người dùng Việt Nam. Nhãn hiệu này liên tục
+                        dẫn đầu thị trường dù chịu nhiều áp lực cạnh tranh, góp
+                        phần không nhỏ vào câu chuyện thành công chung của
+                        Vinamilk.
+                      </p>
+                    </div>
+                    <div class="group_image_510">
+                      <img
+                        src="assets/images/group_7_1.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                      <img
+                        src="assets/images/group_7_2.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                      <img
+                        src="assets/images/group_7_3.png"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                    </div>
+                    <div
+                      class="group_text group_text_7"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="800"
+                      data-aos-offset="300"
+                    >
+                      <p class="text_content">
+                        Cột mốc mà bà Mai Kiều Liên mãi không quên chính là thời
+                        điểm giành được hợp đồng xuất khẩu vào năm 1998, cách
+                        đây đúng 25 năm. Dielac cũng là sản phẩm đầu tiên của
+                        Vinamilk được "xuất ngoại", tiếp tục là mặt hàng xuất
+                        khẩu chủ lực của hãng cho đến ngày nay. Nhãn sữa đóng
+                        góp vào sự hiện diện của Vinamilk tại 57 quốc gia và
+                        vùng lãnh thổ, với tổng kim ngạch xuất khẩu lũy kế hơn
+                        2,6 tỷ USD.
+                      </p>
+                      <p class="text_content">
+                        Năm 1990, trước làn sóng hội nhập, các doanh nghiệp nhìn
+                        thấy rõ tình thế: xuất khẩu là yếu tố sống còn. Cơ hội
+                        đến một cách bất ngờ, năm 1996 Iraq có chương trình đổi
+                        dầu lấy lương thực. Để tiếp cận, bà Mai Kiều Liên ngỏ
+                        lời đề nghị rằng Vinamilk sẽ tài trợ hai container sữa
+                        Dielac với suy nghĩ rằng người ta dùng thử, tin tưởng
+                        thì cơ hội bán hàng của mình sẽ cao. Sau khi Chính phủ
+                        Iraq kiểm tra chất lượng và trực tiếp sang thăm nhà máy
+                        Dielac, họ đề nghị Vinamilk cung cấp 300 tấn sữa trong
+                        ba tháng.
+                      </p>
+                    </div>
+                    <img
+                      src="assets/images/img_4.png"
+                      alt=""
+                      class="img_1160 img pc"
+                      data-aos="zoom-in"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="500"
+                    />
+                    <img
+                      src="assets/images/img_4_mobile.png"
+                      alt=""
+                      class="img_1160 img mobile"
+                      data-aos="zoom-in"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="500"
+                    />
+                    <div
+                      class="group_text group_text_8"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="800"
+                      data-aos-offset="300"
+                      data-aos-delay="300"
+                    >
+                      <p class="text_content">
+                        Ngay sau lời đề nghị của nước bạn, Vinamilk tham gia
+                        đoàn công tác 28 người của Việt Nam đến Iraq thực hiện
+                        cuộc đấu thầu quốc tế. Đoàn có nhiều doanh nghiệp, sữa
+                        là đơn vị đàm phán cuối cùng. Khoảng 1-2h sáng, khi
+                        chính thức ký tên lên bản hợp đồng, bà Mai Kiều Liên cảm
+                        thấy đầy tự hào. Bởi trước đó, không ai nghĩ Việt Nam có
+                        thể xuất khẩu sữa trẻ em, rằng sữa Việt Nam 100% là nhập
+                        ngoại.
+                      </p>
+                      <p class="text_content">
+                        Trở về nước, nhà máy Vinamilk gần như sáng đèn 24/24,
+                        đội ngũ lãnh đạo công ty cũng thường xuyên túc trực ở
+                        nhà máy cũng với anh em cán bộ, công nhân. Nỗ lực của
+                        toàn tập thể nhận về "quả ngọt", 300 tấn hàng hoàn thành
+                        đúng chỉ tiêu, giao cho đối tác. Từ đó, kim ngạch xuất
+                        khẩu giữa hai bên duy trì và bền vững trong suốt hơn 10
+                        năm sau đó.
+                      </p>
+                      <p class="text_content">
+                        Một câu chuyện vui mà xen lẫn sự tự hào được phòng Kinh
+                        doanh Quốc tế của Vinamilk kể lại rằng, khi đi thực tế
+                        thị trường ở các nước Trung Đông, người dân ở một số nơi
+                        đã quen thuộc với Dielac đến mức dùng từ “Dielac” để gọi
+                        thay cho sữa bột trẻ em.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="section_1_4 pc">
+                  <p
+                    class="text_group_img"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="500"
+                  >
+                    Bà Mai Kiều Liên tại biên giới Iraq trong chuyến đi đấu thầu
+                    quốc tế năm 1998.
+                  </p>
+                  <div class="group_image_container">
+                    <div class="group_image_1570">
+                      <img
+                        src="assets/images/group_8_1.png"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                      <img
+                        src="assets/images/group_8_2.png"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                      <img
+                        src="assets/images/group_8_3.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                      <img
+                        src="assets/images/group_8_4.png"
+                        data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                    </div>
+                    <p
+                      class="des_image"
+                      style="margin-bottom: 0; padding-bottom: 10px"
+                    >
+                      Những cuộc thương thảo và chuyến hàng xuất khẩu đầu tiên.
                     </p>
                   </div>
+                </div>
 
-                  <div class="group_image_container_4 mobile">
-                    <div class="group_image_blue">
-                      <img src="assets/images/group_11_4.png" data-aos="fade-up" data-aos-easing="linear"
-                        data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                      <img src="assets/images/group_11_1.png" data-aos="fade-up" data-aos-easing="linear"
-                        data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                      <img src="assets/images/group_11_2.png" data-aos="fade-up" data-aos-easing="linear"
-                        data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                      <img src="assets/images/group_11_3.png" data-aos="fade-up" data-aos-easing="linear"
-                        data-aos-duration="1000" data-aos-offset="300" data-aos-delay="500" />
-                      <p class="des_slider" style="margin-top: -5%">
+                <div class="section_1_4 mobile">
+                  <!-- k hieu  -->
+                  <p
+                    class="text_group_img"
+                    data-aos="fade-right"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="500"
+                  ></p>
+                  <div class="group_image_container">
+                    <div class="group_image_1570">
+                      <img
+                        src="assets/images/group_8_2_mobile.png"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                    </div>
+                    <img
+                      src="assets/images/group_8_1_mobile.png"
+                      alt=""
+                      class="img img_526"
+                      style="margin-top: 10px"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="500"
+                    />
+                    <p
+                      class="des_image"
+                      style="margin-bottom: 0; padding-bottom: 10px"
+                    >
+                      Bà Mai Kiều Liên tại biên giới Iraq <br />
+                      trong chuyến đi đấu thầu quốc tế năm 1998.
+                    </p>
+                    <div class="group_image_1570">
+                      <img
+                        src="assets/images/group_8_3_mobile.png"
+                        data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="200"
+                      />
+                      <img
+                        src="assets/images/group_8_4_mobile.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                    </div>
+                    <p
+                      class="des_image"
+                      style="margin-bottom: 0; padding-bottom: 10px"
+                    >
+                      Những cuộc thương thảo và chuyến hàng xuất khẩu đầu tiên.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="section_1_5">
+                  <div
+                    class="group_text group_text_9"
+                    data-aos="fade-up"
+                    data-aos-easing="linear"
+                    data-aos-duration="800"
+                    data-aos-offset="300"
+                    data-aos-delay="300"
+                  >
+                    <p class="text_content">
+                      “Những em bé đầu tiên uống sản phẩm này từ những ngày đầu
+                      của 25 năm trước, đến nay đã là những ông bố bà mẹ, tiếp
+                      tục lựa chọn Dielac để chăm sóc thế hệ tương lai, gửi gắm
+                      ước mơ về những em bé cao khỏe, thông minh”, ông Võ Trung
+                      Hiếu, Giám đốc Kinh doanh quốc tế của Vinamilk chia sẻ.
+                    </p>
+                    <p class="text_content">
+                      Những bước đi đầu tiên này cũng chính là nền tảng cho hoạt
+                      động kinh doanh quốc tế giữa Vinamilk với các đối tác khác
+                      tại Trung Đông lẫn toàn cầu cho đến tận hôm nay.
+                    </p>
+                  </div>
+                  <div class="group_image_container_2">
+                    <div
+                      class="left"
+                      data-aos="fade-right"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="300"
+                    >
+                      <img src="assets/images/group_9_1.png" alt="" />
+                      <p style="width: 80%; display: block" class="des_image">
+                        Những khách hàng quốc tế đầu tiên của Dielac năm 1989.
+                      </p>
+                    </div>
+                    <div
+                      class="rigt"
+                      data-aos="fade-left"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="300"
+                    >
+                      <img src="assets/images/group_9_2.png" alt="" />
+                      <p class="des_image">
+                        Các sản phẩm của Vinamilk đến với thị trường quốc tế.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="group_image_container_3">
+                    <div class="group_image_1570">
+                      <img
+                        src="assets/images/group_10_1.png"
+                        data-aos="fade-right"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                      <img
+                        src="assets/images/group_10_2.png"
+                        data-aos="fade-left"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                      <img
+                        src="assets/images/group_10_3.png"
+                        data-aos="fade-up"
+                        data-aos-easing="linear"
+                        data-aos-duration="1000"
+                        data-aos-offset="300"
+                        data-aos-delay="500"
+                      />
+                    </div>
+                    <div
+                      class="group_text group_text_10"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="300"
+                    >
+                      <p class="text_content">
+                        Trong nỗ lực xây dựng ngành công nghiệp sữa, Vinamilk
+                        không ngừng hiện đại hóa dây chuyền sản xuất.
+                      </p>
+                      <p class="text_content">
+                        Năm 2013, hãng khánh thành một siêu nhà máy sữa bột đầu
+                        tiên của Việt Nam tại Bình Dương. Vốn đầu tư 100 triệu
+                        USD, công suất 54.000 tấn một năm với tháp sấy khổng lồ,
+                        dây chuyền hiện đại khép kín. Đây là sự đầu tư chiến
+                        lược có tác động rất lớn để gia tăng năng lực sản xuất
+                        lẫn chất lượng sản phẩm, đưa ngành hàng sữa bột trẻ em
+                        của Vinamilk phát triển mạnh mẽ nhiều năm sau đó.
+                      </p>
+                      <p class="text_content">
+                        Cũng trong giai đoạn này, doanh nghiệp sữa Việt liên tục
+                        trở thành các đối tác chiến lược của Viện dinh dưỡng
+                        Quốc gia cùng những tập đoàn lớn như Chrs. Hansen, DSM,
+                        Dupont… để ứng dụng các nghiên cứu tiên tiến vào các sản
+                        phẩm sữa bột trẻ em.
+                      </p>
+                    </div>
+                    <div
+                      class="container_blue"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="300"
+                    >
+                      <div class="slider_container">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                          <!-- Additional required wrapper -->
+                          <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                              <img
+                                src="assets/images/slide_1.png"
+                                alt=""
+                                class="img img_slide"
+                              />
+                            </div>
+                            <div class="swiper-slide">
+                              <img
+                                src="assets/images/slide_2.png"
+                                alt=""
+                                class="img img_slide"
+                              />
+                            </div>
+                            <div class="swiper-slide">
+                              <img
+                                src="assets/images/slide_3.png"
+                                alt=""
+                                class="img img_slide"
+                              />
+                            </div>
+                          </div>
+                          <!-- If we need navigation buttons -->
+                          <div class="swiper-button-prev"></div>
+                          <div class="swiper-button-next"></div>
+                        </div>
+                      </div>
+
+                      <!-- ------ -->
+
+                      <p class="des_slider" style="margin-top: 0">
                         Nhà máy Sữa bột Việt Nam tại Bình Dương với dây chuyền
                         hiện đại.
                       </p>
                     </div>
-                  </div>
 
+                    <!-- <div class="group_image_container_4 mobile">
+                      <div class="group_image_blue">
+                        <img
+                          src="assets/images/group_11_4.png"
+                          data-aos="fade-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="1000"
+                          data-aos-offset="300"
+                          data-aos-delay="500"
+                        />
+                        <img
+                          src="assets/images/group_11_1.png"
+                          data-aos="fade-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="1000"
+                          data-aos-offset="300"
+                          data-aos-delay="500"
+                        />
+                        <img
+                          src="assets/images/group_11_2.png"
+                          data-aos="fade-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="1000"
+                          data-aos-offset="300"
+                          data-aos-delay="500"
+                        />
+                        <img
+                          src="assets/images/group_11_3.png"
+                          data-aos="fade-up"
+                          data-aos-easing="linear"
+                          data-aos-duration="1000"
+                          data-aos-offset="300"
+                          data-aos-delay="500"
+                        />
+                        <p class="des_slider" style="margin-top: -5%">
+                          Nhà máy Sữa bột Việt Nam tại Bình Dương với dây chuyền
+                          hiện đại.
+                        </p>
+                      </div>
+                    </div> -->
 
-
-                  <div class="group_text group_text_11" data-aos="fade-up" data-aos-easing="linear"
-                    data-aos-duration="1000" data-aos-offset="300" data-aos-delay="300">
-                    <p class="text_content">
-                      Liên tiếp nhiều năm và gần nhất là năm 2021, Vinamilk là
-                      nhà sản xuất đứng đầu về sản lượng trong ngành hàng sữa
-                      bột trẻ em tại Việt Nam (theo Nielsen), trong đó Dielac
-                      có phần đóng góp rất lớn. Nền công nghiệp sữa Việt Nam
-                      từ con số không, qua gần 5 thập kỷ phát triển của
-                      Vinamilk, đến nay đã đạt nhiều dấu ấn rực rỡ với loạt
-                      nhãn hiệu đạt chuẩn quốc tế nhưng có giá thành hợp lý
-                      cho người dùng Việt.
-                    </p>
-                    <p class="text_content">
-                      Vừa qua, tại Hội nghị sữa Châu Á tại Singapore, câu
-                      chuyện về Dielac đã được Vinamilk chia sẻ trong chủ đề
-                      “Xây dựng tình yêu thương hiệu trong ngành sữa”. Với sản
-                      phẩm Dielac, 33 năm qua, hành trình của thương hiệu đi
-                      từ việc cung cấp một lựa chọn về dinh dưỡng, đến mục
-                      tiêu lớn hơn: cải thiện tầm vóc người Việt, ngày một
-                      nâng cao chất lượng sản phẩm theo chiều rộng lẫn chiều
-                      sâu, luôn đồng hành cùng mẹ để nuôi con khôn lớn đường
-                      dài...
-                    </p>
-                    <p class="text_content">
-                      Thương hiệu này tin tưởng rằng: "Đi từ trái tim sẽ chạm
-                      đến trái tim". Dù là người mẹ tại Việt Nam hay ở bất cứ
-                      đâu trên thế giới, Dielac vẫn luôn thấu hiểu kỳ vọng mà
-                      họ gửi gắm khi chọn nguồn dinh dưỡng cho con để từ đó
-                      hiện thực hóa nó trong từng ly sữa.
-                    </p>
-                  </div>
-                  <img src="assets/images/img_6.png" alt="" class="img img_6 pc" />
-                  <img src="assets/images/img_6_mobile.png" alt="" class="img img_6 mobile" />
-                  <div class="author pc">
-                    <p class="text_content t-content">
-                      Nội dung: <span>Minh Tú</span> - Thiết kế:
-                      <span>Hằng Trịnh</span>
-                      - Ảnh: <span>Quỳnh Trần</span> - Kỹ thuật:
-                      <span>Sơn Bá </span>
-                    </p>
-                  </div>
-                  <div class="author mobile">
+                    <div
+                      class="group_text group_text_11"
+                      data-aos="fade-up"
+                      data-aos-easing="linear"
+                      data-aos-duration="1000"
+                      data-aos-offset="300"
+                      data-aos-delay="300"
+                    >
+                      <p class="text_content">
+                        Liên tiếp nhiều năm và gần nhất là năm 2021, Vinamilk là
+                        nhà sản xuất đứng đầu về sản lượng trong ngành hàng sữa
+                        bột trẻ em tại Việt Nam (theo Nielsen), trong đó Dielac
+                        có phần đóng góp rất lớn. Nền công nghiệp sữa Việt Nam
+                        từ con số không, qua gần 5 thập kỷ phát triển của
+                        Vinamilk, đến nay đã đạt nhiều dấu ấn rực rỡ với loạt
+                        nhãn hiệu đạt chuẩn quốc tế nhưng có giá thành hợp lý
+                        cho người dùng Việt.
+                      </p>
+                      <p class="text_content">
+                        Vừa qua, tại Hội nghị sữa Châu Á tại Singapore, câu
+                        chuyện về Dielac đã được Vinamilk chia sẻ trong chủ đề
+                        “Xây dựng tình yêu thương hiệu trong ngành sữa”. Với sản
+                        phẩm Dielac, 33 năm qua, hành trình của thương hiệu đi
+                        từ việc cung cấp một lựa chọn về dinh dưỡng, đến mục
+                        tiêu lớn hơn: cải thiện tầm vóc người Việt, ngày một
+                        nâng cao chất lượng sản phẩm theo chiều rộng lẫn chiều
+                        sâu, luôn đồng hành cùng mẹ để nuôi con khôn lớn đường
+                        dài...
+                      </p>
+                      <p class="text_content">
+                        Thương hiệu này tin tưởng rằng: "Đi từ trái tim sẽ chạm
+                        đến trái tim". Dù là người mẹ tại Việt Nam hay ở bất cứ
+                        đâu trên thế giới, Dielac vẫn luôn thấu hiểu kỳ vọng mà
+                        họ gửi gắm khi chọn nguồn dinh dưỡng cho con để từ đó
+                        hiện thực hóa nó trong từng ly sữa.
+                      </p>
+                    </div>
+                    <img
+                      src="assets/images/img_6.png"
+                      alt=""
+                      class="img img_6 pc"
+                    />
+                    <img
+                      src="assets/images/img_6_mobile.png"
+                      alt=""
+                      class="img img_6 mobile"
+                    />
+                    <div class="author pc">
+                      <p class="text_content t-content">
+                        Nội dung: <span>Minh Tú</span> - Thiết kế:
+                        <span>Hằng Trịnh</span>
+                        - Ảnh: <span>Quỳnh Trần</span> - Kỹ thuật:
+                        <span>Sơn Bá </span>
+                      </p>
+                    </div>
+                    <div class="author mobile">
                       <p class="text_content t-content">
                         Nội dung: <span>Minh Tú</span> - Thiết kế:
                         <span>Hằng Trịnh</span> <br />
@@ -802,38 +1364,82 @@
                         <span>Sơn Bá</span>
                       </p>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- End Main Content -->
+
+      <!-- COMMENTS BOX -->
+      <!-- END COMMENTS BOX -->
     </div>
-    <!-- End Main Content -->
+    <!-- End Document Warpper -->
 
-    <!-- COMMENTS BOX -->
-    <!-- END COMMENTS BOX -->
-  </div>
-  <!-- End Document Warpper -->
+    <!-- Core Script -->
+    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.migrate.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/header-sticky.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/js/jquery.nicescroll.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/lib.min.js"></script>
+    <!-- End Core Script -->
 
-  <!-- Core Script -->
-  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.migrate.min.js"></script>
-  <script type="text/javascript" src="assets/js/header-sticky.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.nicescroll.min.js"></script>
-  <script type="text/javascript" src="assets/js/lib.min.js"></script>
-  <!-- End Core Script -->
-
-  <script type="text/javascript" src="assets/js/aos.js"></script>
-  <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
-  <script type="text/javascript" src="assets/js/swiper.min.js"></script>
-  <script type="text/javascript" src="assets/js/main.min.js"></script>
-  <script>
-    AOS.init({ offset: 120, duration: 5000 });
-    document
-      .querySelectorAll("img")
-      .forEach((img) => img.addEventListener("load", () => AOS.refresh()));
-  </script>
-</body>
-
+    <script type="text/javascript" src="assets/js/aos.js"></script>
+    <script type="text/javascript" src="assets/js/imagesStatus.min.js"></script>
+    <script type="text/javascript" src="assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.min.js"></script>
+    <script>
+      AOS.init({ offset: 120, duration: 5000 });
+      document
+        .querySelectorAll("img")
+        .forEach((img) => img.addEventListener("load", () => AOS.refresh()));
+    </script>
+    <script>
+      var mySwiper = new Swiper(".swiper-container", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          821: {
+            slidesPerView: 3,
+            spaceBetween: 80,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          576: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 40,
+          },
+        },
+      });
+    </script>
+  </body>
 </html>
